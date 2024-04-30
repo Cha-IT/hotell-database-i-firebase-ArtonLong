@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <label for="floor">Select floor</label>
+    <select name="floor" id="floor">
+      <option value="none">all</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+    </select>
+
+    <label for="roomType">Select the room type</label>
+    <select name="roomType" id="roomType">
+      <option value="none">all</option>
+      <option value="single">single</option>
+      <option value="double">double</option>
+      <option value="suite">suite</option>
+    </select>
+    <label for="beds">Select number of beds</label>
+    <select name="beds" id="beds">
+      <option value="none">all</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+    </select>
+
+    <label for="ShowAvailable">show unavailable rooms</label>
+    <input
+      type="checkbox"
+      id="ShowAvailable"
+      name="ShowAvailable"
+      value="Bike"
+    />
+
+    <button id="reload">Reload Rooms</button>
+
+    <div id="rooms"></div>
+
+    <!--<script type="module" src="populateDatabase.js"></script>-->
+    <script type="module" src="getRooms.js"></script>
+  </body>
+</html>
